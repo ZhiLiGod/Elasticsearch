@@ -1,0 +1,8 @@
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: zhi-cluster
+      cluster-nodes: 127.0.0.1:8200
+      repositories:
+        enabled: true
