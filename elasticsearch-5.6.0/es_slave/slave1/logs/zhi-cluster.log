@@ -1,0 +1,200 @@
+[2020-08-30T15:40:35,742][INFO ][o.e.n.Node               ] [slave1] initializing ...
+[2020-08-30T15:40:36,017][INFO ][o.e.e.NodeEnvironment    ] [slave1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.4gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:40:36,017][INFO ][o.e.e.NodeEnvironment    ] [slave1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:40:36,022][INFO ][o.e.n.Node               ] [slave1] node name [slave1], node ID [d7zZDF1FRYmHNO53r7iBwQ]
+[2020-08-30T15:40:36,023][INFO ][o.e.n.Node               ] [slave1] version[5.6.0], pid[24972], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:40:36,024][INFO ][o.e.n.Node               ] [slave1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\es_slave\slave1]
+[2020-08-30T15:40:38,376][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:40:38,377][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [ingest-common]
+[2020-08-30T15:40:38,378][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-expression]
+[2020-08-30T15:40:38,378][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-groovy]
+[2020-08-30T15:40:38,378][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-mustache]
+[2020-08-30T15:40:38,379][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-painless]
+[2020-08-30T15:40:38,379][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [parent-join]
+[2020-08-30T15:40:38,379][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [percolator]
+[2020-08-30T15:40:38,380][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [reindex]
+[2020-08-30T15:40:38,380][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty3]
+[2020-08-30T15:40:38,380][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty4]
+[2020-08-30T15:40:38,381][INFO ][o.e.p.PluginsService     ] [slave1] no plugins loaded
+[2020-08-30T15:40:40,226][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalArgumentException: unknown setting [network.port] please check that any required plugins are installed, or check the breaking changes documentation for removed settings
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:256) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.SettingsModule.<init>(SettingsModule.java:139) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:344) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+[2020-08-30T15:40:40,255][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [slave1] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: unknown setting [network.port] please check that any required plugins are installed, or check the breaking changes documentation for removed settings
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.lang.IllegalArgumentException: unknown setting [network.port] please check that any required plugins are installed, or check the breaking changes documentation for removed settings
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:256) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.SettingsModule.<init>(SettingsModule.java:139) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:344) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2020-08-30T15:41:55,246][INFO ][o.e.n.Node               ] [slave1] initializing ...
+[2020-08-30T15:41:55,357][INFO ][o.e.e.NodeEnvironment    ] [slave1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.4gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:41:55,358][INFO ][o.e.e.NodeEnvironment    ] [slave1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:41:55,361][INFO ][o.e.n.Node               ] [slave1] node name [slave1], node ID [d7zZDF1FRYmHNO53r7iBwQ]
+[2020-08-30T15:41:55,362][INFO ][o.e.n.Node               ] [slave1] version[5.6.0], pid[13400], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:41:55,362][INFO ][o.e.n.Node               ] [slave1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\es_slave\slave1]
+[2020-08-30T15:41:56,143][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:41:56,143][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [ingest-common]
+[2020-08-30T15:41:56,143][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-expression]
+[2020-08-30T15:41:56,144][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-groovy]
+[2020-08-30T15:41:56,144][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-mustache]
+[2020-08-30T15:41:56,144][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-painless]
+[2020-08-30T15:41:56,144][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [parent-join]
+[2020-08-30T15:41:56,144][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [percolator]
+[2020-08-30T15:41:56,145][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [reindex]
+[2020-08-30T15:41:56,145][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty3]
+[2020-08-30T15:41:56,145][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty4]
+[2020-08-30T15:41:56,146][INFO ][o.e.p.PluginsService     ] [slave1] no plugins loaded
+[2020-08-30T15:41:56,928][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalArgumentException: unknown setting [network.port] please check that any required plugins are installed, or check the breaking changes documentation for removed settings
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:256) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.SettingsModule.<init>(SettingsModule.java:139) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:344) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+[2020-08-30T15:41:56,935][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [slave1] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: unknown setting [network.port] please check that any required plugins are installed, or check the breaking changes documentation for removed settings
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.lang.IllegalArgumentException: unknown setting [network.port] please check that any required plugins are installed, or check the breaking changes documentation for removed settings
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.AbstractScopedSettings.validate(AbstractScopedSettings.java:256) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.settings.SettingsModule.<init>(SettingsModule.java:139) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:344) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2020-08-30T15:42:19,646][INFO ][o.e.n.Node               ] [slave1] initializing ...
+[2020-08-30T15:42:19,782][INFO ][o.e.e.NodeEnvironment    ] [slave1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.4gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:42:19,784][INFO ][o.e.e.NodeEnvironment    ] [slave1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:42:19,787][INFO ][o.e.n.Node               ] [slave1] node name [slave1], node ID [d7zZDF1FRYmHNO53r7iBwQ]
+[2020-08-30T15:42:19,788][INFO ][o.e.n.Node               ] [slave1] version[5.6.0], pid[26012], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:42:19,788][INFO ][o.e.n.Node               ] [slave1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\es_slave\slave1]
+[2020-08-30T15:42:20,761][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:42:20,761][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [ingest-common]
+[2020-08-30T15:42:20,761][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-expression]
+[2020-08-30T15:42:20,762][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-groovy]
+[2020-08-30T15:42:20,762][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-mustache]
+[2020-08-30T15:42:20,762][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-painless]
+[2020-08-30T15:42:20,762][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [parent-join]
+[2020-08-30T15:42:20,762][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [percolator]
+[2020-08-30T15:42:20,763][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [reindex]
+[2020-08-30T15:42:20,763][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty3]
+[2020-08-30T15:42:20,763][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty4]
+[2020-08-30T15:42:20,764][INFO ][o.e.p.PluginsService     ] [slave1] no plugins loaded
+[2020-08-30T15:42:24,141][INFO ][o.e.d.DiscoveryModule    ] [slave1] using discovery type [zen]
+[2020-08-30T15:42:24,878][INFO ][o.e.n.Node               ] [slave1] initialized
+[2020-08-30T15:42:24,879][INFO ][o.e.n.Node               ] [slave1] starting ...
+[2020-08-30T15:42:25,852][INFO ][o.e.t.TransportService   ] [slave1] publish_address {127.0.0.1:9301}, bound_addresses {127.0.0.1:9301}
+[2020-08-30T15:42:29,128][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{KVmVLVVbTLioF8lfsXyiBg}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:42:32,189][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{KVmVLVVbTLioF8lfsXyiBg}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:42:35,223][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{KVmVLVVbTLioF8lfsXyiBg}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:42:38,267][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{KVmVLVVbTLioF8lfsXyiBg}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:42:41,289][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{KVmVLVVbTLioF8lfsXyiBg}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:42:43,075][INFO ][o.e.n.Node               ] [slave1] stopping ...
+[2020-08-30T15:42:43,101][INFO ][o.e.n.Node               ] [slave1] stopped
+[2020-08-30T15:42:43,102][INFO ][o.e.n.Node               ] [slave1] closing ...
+[2020-08-30T15:42:43,115][INFO ][o.e.n.Node               ] [slave1] closed
+[2020-08-30T15:43:13,537][INFO ][o.e.n.Node               ] [slave1] initializing ...
+[2020-08-30T15:43:13,753][INFO ][o.e.e.NodeEnvironment    ] [slave1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.4gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:43:13,754][INFO ][o.e.e.NodeEnvironment    ] [slave1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:43:13,757][INFO ][o.e.n.Node               ] [slave1] node name [slave1], node ID [d7zZDF1FRYmHNO53r7iBwQ]
+[2020-08-30T15:43:13,757][INFO ][o.e.n.Node               ] [slave1] version[5.6.0], pid[29632], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:43:13,758][INFO ][o.e.n.Node               ] [slave1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\es_slave\slave1]
+[2020-08-30T15:43:14,703][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:43:14,703][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [ingest-common]
+[2020-08-30T15:43:14,704][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-expression]
+[2020-08-30T15:43:14,704][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-groovy]
+[2020-08-30T15:43:14,704][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-mustache]
+[2020-08-30T15:43:14,705][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-painless]
+[2020-08-30T15:43:14,705][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [parent-join]
+[2020-08-30T15:43:14,705][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [percolator]
+[2020-08-30T15:43:14,706][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [reindex]
+[2020-08-30T15:43:14,706][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty3]
+[2020-08-30T15:43:14,706][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty4]
+[2020-08-30T15:43:14,707][INFO ][o.e.p.PluginsService     ] [slave1] no plugins loaded
+[2020-08-30T15:43:17,408][INFO ][o.e.d.DiscoveryModule    ] [slave1] using discovery type [zen]
+[2020-08-30T15:43:17,882][INFO ][o.e.n.Node               ] [slave1] initialized
+[2020-08-30T15:43:17,884][INFO ][o.e.n.Node               ] [slave1] starting ...
+[2020-08-30T15:43:18,849][INFO ][o.e.t.TransportService   ] [slave1] publish_address {127.0.0.1:9301}, bound_addresses {127.0.0.1:9301}
+[2020-08-30T15:43:22,006][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:25,036][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:28,066][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:31,097][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:34,118][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:37,134][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:40,146][INFO ][o.e.d.z.ZenDiscovery     ] [slave1] failed to send join request to master [{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}], reason [RemoteTransportException[[master][127.0.0.1:9300][internal:discovery/zen/join]]; nested: IllegalArgumentException[can't add node {slave1}{d7zZDF1FRYmHNO53r7iBwQ}{z0LGl5XuS72-fZogMN7SBA}{127.0.0.1}{127.0.0.1:9301}, found existing node {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} with the same id but is a different node instance]; ]
+[2020-08-30T15:43:42,930][INFO ][o.e.n.Node               ] [slave1] stopping ...
+[2020-08-30T15:43:42,961][INFO ][o.e.n.Node               ] [slave1] stopped
+[2020-08-30T15:43:42,961][INFO ][o.e.n.Node               ] [slave1] closing ...
+[2020-08-30T15:43:42,982][INFO ][o.e.n.Node               ] [slave1] closed
+[2020-08-30T15:43:42,983][INFO ][o.e.h.n.Netty4HttpServerTransport] [slave1] publish_address {127.0.0.1:8200}, bound_addresses {127.0.0.1:8200}
+[2020-08-30T15:51:09,290][INFO ][o.e.n.Node               ] [slave1] initializing ...
+[2020-08-30T15:51:09,784][INFO ][o.e.e.NodeEnvironment    ] [slave1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.4gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:51:09,785][INFO ][o.e.e.NodeEnvironment    ] [slave1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:51:09,788][INFO ][o.e.n.Node               ] [slave1] node name [slave1], node ID [kcLGvbNZQW2aJ23dRYvpJQ]
+[2020-08-30T15:51:09,788][INFO ][o.e.n.Node               ] [slave1] version[5.6.0], pid[23908], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:51:09,789][INFO ][o.e.n.Node               ] [slave1] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\es_slave\slave1]
+[2020-08-30T15:51:10,521][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:51:10,522][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [ingest-common]
+[2020-08-30T15:51:10,522][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-expression]
+[2020-08-30T15:51:10,522][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-groovy]
+[2020-08-30T15:51:10,522][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-mustache]
+[2020-08-30T15:51:10,522][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [lang-painless]
+[2020-08-30T15:51:10,523][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [parent-join]
+[2020-08-30T15:51:10,523][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [percolator]
+[2020-08-30T15:51:10,523][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [reindex]
+[2020-08-30T15:51:10,524][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty3]
+[2020-08-30T15:51:10,524][INFO ][o.e.p.PluginsService     ] [slave1] loaded module [transport-netty4]
+[2020-08-30T15:51:10,524][INFO ][o.e.p.PluginsService     ] [slave1] no plugins loaded
+[2020-08-30T15:51:12,383][INFO ][o.e.d.DiscoveryModule    ] [slave1] using discovery type [zen]
+[2020-08-30T15:51:12,830][INFO ][o.e.n.Node               ] [slave1] initialized
+[2020-08-30T15:51:12,830][INFO ][o.e.n.Node               ] [slave1] starting ...
+[2020-08-30T15:51:13,580][INFO ][o.e.t.TransportService   ] [slave1] publish_address {127.0.0.1:9301}, bound_addresses {127.0.0.1:9301}
+[2020-08-30T15:51:16,949][INFO ][o.e.c.s.ClusterService   ] [slave1] detected_master {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300}, added {{master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-receive(from master [master {master}{d7zZDF1FRYmHNO53r7iBwQ}{IRVUqQW1SqqD89W8rsBMzA}{127.0.0.1}{127.0.0.1:9300} committed version [15]])
+[2020-08-30T15:51:17,792][INFO ][o.e.h.n.Netty4HttpServerTransport] [slave1] publish_address {127.0.0.1:8200}, bound_addresses {127.0.0.1:8200}
+[2020-08-30T15:51:17,792][INFO ][o.e.n.Node               ] [slave1] started

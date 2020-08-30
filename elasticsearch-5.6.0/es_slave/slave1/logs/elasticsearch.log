@@ -1,0 +1,60 @@
+[2020-08-30T15:13:35,127][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-08-30T15:13:35,578][INFO ][o.e.e.NodeEnvironment    ] [d7zZDF1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.6gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:13:35,578][INFO ][o.e.e.NodeEnvironment    ] [d7zZDF1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:13:35,588][INFO ][o.e.n.Node               ] node name [d7zZDF1] derived from node ID [d7zZDF1FRYmHNO53r7iBwQ]; set [node.name] to override
+[2020-08-30T15:13:35,588][INFO ][o.e.n.Node               ] version[5.6.0], pid[18488], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:13:35,589][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\elasticsearch-5.6.0]
+[2020-08-30T15:13:36,576][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:13:36,577][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [ingest-common]
+[2020-08-30T15:13:36,577][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-expression]
+[2020-08-30T15:13:36,577][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-groovy]
+[2020-08-30T15:13:36,577][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-mustache]
+[2020-08-30T15:13:36,577][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-painless]
+[2020-08-30T15:13:36,578][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [parent-join]
+[2020-08-30T15:13:36,578][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [percolator]
+[2020-08-30T15:13:36,578][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [reindex]
+[2020-08-30T15:13:36,579][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [transport-netty3]
+[2020-08-30T15:13:36,579][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [transport-netty4]
+[2020-08-30T15:13:36,579][INFO ][o.e.p.PluginsService     ] [d7zZDF1] no plugins loaded
+[2020-08-30T15:13:38,789][INFO ][o.e.d.DiscoveryModule    ] [d7zZDF1] using discovery type [zen]
+[2020-08-30T15:13:39,277][INFO ][o.e.n.Node               ] initialized
+[2020-08-30T15:13:39,277][INFO ][o.e.n.Node               ] [d7zZDF1] starting ...
+[2020-08-30T15:13:41,523][INFO ][o.e.t.TransportService   ] [d7zZDF1] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2020-08-30T15:13:44,588][INFO ][o.e.c.s.ClusterService   ] [d7zZDF1] new_master {d7zZDF1}{d7zZDF1FRYmHNO53r7iBwQ}{NUqtzNuPTIS_JllUyjnXVg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2020-08-30T15:13:44,651][INFO ][o.e.g.GatewayService     ] [d7zZDF1] recovered [0] indices into cluster_state
+[2020-08-30T15:13:46,003][INFO ][o.e.h.n.Netty4HttpServerTransport] [d7zZDF1] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2020-08-30T15:13:46,003][INFO ][o.e.n.Node               ] [d7zZDF1] started
+[2020-08-30T15:17:40,899][INFO ][o.e.n.Node               ] [d7zZDF1] stopping ...
+[2020-08-30T15:17:40,929][INFO ][o.e.n.Node               ] [d7zZDF1] stopped
+[2020-08-30T15:17:40,930][INFO ][o.e.n.Node               ] [d7zZDF1] closing ...
+[2020-08-30T15:17:40,944][INFO ][o.e.n.Node               ] [d7zZDF1] closed
+[2020-08-30T15:24:28,900][INFO ][o.e.n.Node               ] [] initializing ...
+[2020-08-30T15:24:29,011][INFO ][o.e.e.NodeEnvironment    ] [d7zZDF1] using [1] data paths, mounts [[DATA (D:)]], net usable_space [809.5gb], net total_space [931.3gb], spins? [unknown], types [NTFS]
+[2020-08-30T15:24:29,011][INFO ][o.e.e.NodeEnvironment    ] [d7zZDF1] heap size [1.9gb], compressed ordinary object pointers [true]
+[2020-08-30T15:24:29,013][INFO ][o.e.n.Node               ] node name [d7zZDF1] derived from node ID [d7zZDF1FRYmHNO53r7iBwQ]; set [node.name] to override
+[2020-08-30T15:24:29,013][INFO ][o.e.n.Node               ] version[5.6.0], pid[27596], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-08-30T15:24:29,013][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Software\elasticsearch-5.6.0\elasticsearch-5.6.0]
+[2020-08-30T15:24:29,752][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [aggs-matrix-stats]
+[2020-08-30T15:24:29,752][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [ingest-common]
+[2020-08-30T15:24:29,752][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-expression]
+[2020-08-30T15:24:29,752][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-groovy]
+[2020-08-30T15:24:29,752][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-mustache]
+[2020-08-30T15:24:29,752][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [lang-painless]
+[2020-08-30T15:24:29,753][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [parent-join]
+[2020-08-30T15:24:29,753][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [percolator]
+[2020-08-30T15:24:29,753][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [reindex]
+[2020-08-30T15:24:29,753][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [transport-netty3]
+[2020-08-30T15:24:29,753][INFO ][o.e.p.PluginsService     ] [d7zZDF1] loaded module [transport-netty4]
+[2020-08-30T15:24:29,753][INFO ][o.e.p.PluginsService     ] [d7zZDF1] no plugins loaded
+[2020-08-30T15:24:31,716][INFO ][o.e.d.DiscoveryModule    ] [d7zZDF1] using discovery type [zen]
+[2020-08-30T15:24:32,182][INFO ][o.e.n.Node               ] initialized
+[2020-08-30T15:24:32,182][INFO ][o.e.n.Node               ] [d7zZDF1] starting ...
+[2020-08-30T15:24:33,957][INFO ][o.e.t.TransportService   ] [d7zZDF1] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2020-08-30T15:24:37,001][INFO ][o.e.c.s.ClusterService   ] [d7zZDF1] new_master {d7zZDF1}{d7zZDF1FRYmHNO53r7iBwQ}{932lLJX4S3StYE-CMSBdJw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2020-08-30T15:24:37,048][INFO ][o.e.g.GatewayService     ] [d7zZDF1] recovered [0] indices into cluster_state
+[2020-08-30T15:24:38,119][INFO ][o.e.h.n.Netty4HttpServerTransport] [d7zZDF1] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2020-08-30T15:24:38,120][INFO ][o.e.n.Node               ] [d7zZDF1] started
+[2020-08-30T15:31:49,552][INFO ][o.e.n.Node               ] [d7zZDF1] stopping ...
+[2020-08-30T15:31:49,585][INFO ][o.e.n.Node               ] [d7zZDF1] stopped
+[2020-08-30T15:31:49,585][INFO ][o.e.n.Node               ] [d7zZDF1] closing ...
+[2020-08-30T15:31:49,591][INFO ][o.e.n.Node               ] [d7zZDF1] closed
